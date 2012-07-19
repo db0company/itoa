@@ -6,10 +6,10 @@ NAME
 SYNOPSIS
        #include		"itoa.h"
 
-       size_t		nbrlen(int input, unsigned unsigned unsigned unsigned unsigned int radix);
+       size_t		nbrlen(int input, unsigned int radix);
 
-       void            itoa(int input, char * buffer, unsigned unsigned unsigned unsigned unsigned int radix);
-       char *          itoadup(int input, unsigned unsigned unsigned unsigned unsigned int radix);
+       void            itoa(int input, char * buffer, unsigned int radix);
+       char *          itoadup(int input, unsigned int radix);
 
 DESCRIPTION
        The itoa() function make a string with the integer input and put it in
@@ -24,6 +24,7 @@ RETURN VALUE
        itoadup() return NULL if radix is wrong or if allocation failed.
 
 EXAMPLE
+	$> make
 	$> cc example.c -L. -litoa -o convert_base
 	$> ./convert_base 42 16
 	Your number 42 in base 16 is 2A
